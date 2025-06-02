@@ -1,0 +1,34 @@
+apiVersion: 1
+
+groups:
+  - name: WAF Alerts
+    folder: Security
+    interval: 1m
+    rules:
+      - name: High WAF Block Rate
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: AWS-Athena
+            model:
+              format: 1
+              rawSQL: |
+                SELECT
+                  COUNT(*) as blocked_requests
+                FROM
+                  waf_logs
+                WHERE
+                  action = 'BLOCK'
+                  AND from_unixtime(timestamp/1000) >= date_add('minute', -5, current_timestamp)
+        noDataState: OK
+        execErrState: Alerting
+        for: 5m
+        annotations:
+          summary: High rate of WAF blocked requests detected
+          description: More than 100 requests were blocked by WAF in the last 5 minutes
+        labels:
+          severity: high
+          category: security
+        notifications:
+          - uid: slack-notifications
+          - uid: email-notifications 
