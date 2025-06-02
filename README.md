@@ -1,9 +1,12 @@
-# AWS SOC Dashboard Project 
+# AWS SOC Dashboard Project 🛡️
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)](https://grafana.com/)
 
 A comprehensive Security Operations Center (SOC) dashboard that provides real-time visualization and monitoring of AWS WAF traffic logs and VPC Flow Logs. This project enables security teams to detect and respond to incidents faster through intuitive Grafana dashboards.
 
-## Features
+## 🎯 Features
 
 - Real-time monitoring of AWS WAF and VPC Flow Logs
 - Custom Grafana dashboards for security visualization
@@ -12,9 +15,9 @@ A comprehensive Security Operations Center (SOC) dashboard that provides real-ti
 - Role-based access control (RBAC) for dashboard access
 - Cost-optimized log querying and storage
 
-##  Architecture
+## 🏗️ Architecture
 
-![Architecture Diagram](docs/images/architecture.png)
+![Architecture Diagram](https://raw.githubusercontent.com/mlnas/SOC-Dashboard-Project/main/docs/images/architecture.png)
 
 The project follows a serverless architecture leveraging AWS services:
 
@@ -23,15 +26,13 @@ The project follows a serverless architecture leveraging AWS services:
 3. **Visualization**: Grafana dashboards provide real-time insights and alerts
 4. **Notification**: Alerts are sent through configured notification channels
 
-##  Dashboard Examples
+## 📊 Dashboard Examples
 
-![Security Overview](docs/images/security-overview.png)
+![Security Overview](https://raw.githubusercontent.com/mlnas/SOC-Dashboard-Project/main/docs/images/security-overview.png)
 *Security Overview Dashboard showing key metrics and alerts*
 
-![Traffic Analysis](docs/images/traffic-analysis.png)
+![Traffic Analysis](https://raw.githubusercontent.com/mlnas/SOC-Dashboard-Project/main/docs/images/traffic-analysis.png)
 *Network Traffic Analysis Dashboard with detailed flow logs visualization*
-
-
 
 ### Prerequisites
 
