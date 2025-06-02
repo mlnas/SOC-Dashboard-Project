@@ -1,6 +1,6 @@
 # AWS SOC Dashboard Project 
 
-A comprehensive Security Operations Center (SOC) dashboard that provides real-time visualization and monitoring of AWS WAF traffic logs and VPC Flow Logs. This project enables security teams to detect and respond to incidents faster through intuitive Grafana dashboards.
+A SOC dashboard that provides real-time visualization and monitoring of AWS WAF traffic logs and VPC Flow Logs. This project enables security teams to detect and respond to incidents faster through intuitive Grafana dashboards.
 
 ## Features
 
