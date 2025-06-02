@@ -38,7 +38,7 @@ The project follows a serverless architecture leveraging AWS services:
 - Grafana instance (self-hosted or AWS Managed Grafana)
 - Basic understanding of AWS services and security concepts
 
-### Step-by-Step Steps
+### Step-by-Step Setup
 
 1. **Enable Logging**
    ```bash
