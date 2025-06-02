@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-    <!-- Background -->
-    <rect width="800" height="600" fill="#181B1F"/>
-    
-    <!-- Dashboard Title -->
-    <text x="20" y="40" font-family="Arial" font-size="24" fill="#FFFFFF">Security Overview Dashboard</text>
-    
-    <!-- Time Range Selector -->
-    <rect x="600" y="20" width="180" height="30" rx="5" fill="#252A31"/>
-    <text x="620" y="40" font-family="Arial" font-size="14" fill="#FFFFFF">Last 24 hours</text>
-    
-    <!-- WAF Blocked Requests Panel -->
-    <rect x="20" y="60" width="370" height="250" rx="5" fill="#252A31"/>
-    <text x="40" y="90" font-family="Arial" font-size="16" fill="#FFFFFF">WAF Blocked Requests (24h)</text>
-    <!-- Graph -->
-    <polyline points="40,250 100,200 160,220 220,180 280,210 340,150" 
-              fill="none" stroke="#F46800" stroke-width="2"/>
-    
-    <!-- VPC Rejected Flows Panel -->
-    <rect x="410" y="60" width="370" height="250" rx="5" fill="#252A31"/>
-    <text x="430" y="90" font-family="Arial" font-size="16" fill="#FFFFFF">VPC Rejected Flows (Last Hour)</text>
-    <!-- Gauge -->
-    <path d="M595,200 A80,80 0 1,1 595,199" fill="none" stroke="#F46800" stroke-width="20"/>
-    <text x="570" y="210" font-family="Arial" font-size="24" fill="#FFFFFF">85</text>
-    
-    <!-- Top Countries Panel -->
-    <rect x="20" y="330" width="370" height="250" rx="5" fill="#252A31"/>
-    <text x="40" y="360" font-family="Arial" font-size="16" fill="#FFFFFF">Top Countries (Blocked Requests)</text>
-    <!-- Pie Chart -->
-    <circle cx="205" cy="455" r="80" fill="#F46800"/>
-    <path d="M205,455 L205,375 A80,80 0 0,1 275,455 Z" fill="#FF9900"/>
-    <path d="M205,455 L275,455 A80,80 0 0,1 205,535 Z" fill="#1EA7FD"/>
-    
-    <!-- Rejected Connections Panel -->
-    <rect x="410" y="330" width="370" height="250" rx="5" fill="#252A31"/>
-    <text x="430" y="360" font-family="Arial" font-size="16" fill="#FFFFFF">Top Rejected Connection Attempts</text>
-    <!-- Table -->
-    <rect x="430" y="380" width="330" height="30" fill="#1B1F24"/>
-    <text x="440" y="400" font-family="Arial" font-size="12" fill="#FFFFFF">Source IP</text>
-    <text x="570" y="400" font-family="Arial" font-size="12" fill="#FFFFFF">Port</text>
-    <text x="670" y="400" font-family="Arial" font-size="12" fill="#FFFFFF">Count</text>
+  <!-- Dashboard Background -->
+  <rect width="800" height="600" fill="#F8F9FA"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#232F3E"/>
+  <text x="20" y="38" font-family="Arial" font-size="24" fill="white">AWS WAF Security Overview</text>
+  
+  <!-- Stats Row -->
+  <rect x="20" y="80" width="180" height="100" rx="5" fill="white" stroke="#DDD"/>
+  <text x="35" y="110" font-family="Arial" font-size="14" fill="#666">Total Requests</text>
+  <text x="35" y="150" font-family="Arial" font-size="24" fill="#232F3E">1,234,567</text>
+  
+  <rect x="220" y="80" width="180" height="100" rx="5" fill="white" stroke="#DDD"/>
+  <text x="235" y="110" font-family="Arial" font-size="14" fill="#666">Blocked Requests</text>
+  <text x="235" y="150" font-family="Arial" font-size="24" fill="#D13212">12,345</text>
+  
+  <rect x="420" y="80" width="180" height="100" rx="5" fill="white" stroke="#DDD"/>
+  <text x="435" y="110" font-family="Arial" font-size="14" fill="#666">Unique IPs</text>
+  <text x="435" y="150" font-family="Arial" font-size="24" fill="#232F3E">45,678</text>
+  
+  <rect x="620" y="80" width="160" height="100" rx="5" fill="white" stroke="#DDD"/>
+  <text x="635" y="110" font-family="Arial" font-size="14" fill="#666">Countries</text>
+  <text x="635" y="150" font-family="Arial" font-size="24" fill="#232F3E">156</text>
+  
+  <!-- Charts -->
+  <rect x="20" y="200" width="480" height="180" rx="5" fill="white" stroke="#DDD"/>
+  <text x="35" y="230" font-family="Arial" font-size="16" fill="#232F3E">Request Traffic Over Time</text>
+  <path d="M35 280 L475 280" stroke="#EEE"/>
+  <path d="M35 280 C 100 260, 200 300, 300 250 S 400 270, 475 240" stroke="#FF9900" fill="none" stroke-width="2"/>
+  
+  <rect x="520" y="200" width="260" height="180" rx="5" fill="white" stroke="#DDD"/>
+  <text x="535" y="230" font-family="Arial" font-size="16" fill="#232F3E">Top Attack Types</text>
+  <rect x="535" y="250" width="230" height="20" fill="#D13212"/>
+  <rect x="535" y="280" width="180" height="20" fill="#D13212"/>
+  <rect x="535" y="310" width="120" height="20" fill="#D13212"/>
+  
+  <!-- Table -->
+  <rect x="20" y="400" width="760" height="180" rx="5" fill="white" stroke="#DDD"/>
+  <text x="35" y="430" font-family="Arial" font-size="16" fill="#232F3E">Recent Blocked Requests</text>
+  <line x1="20" y1="450" x2="780" y2="450" stroke="#EEE"/>
+  <text x="35" y="470" font-family="Arial" font-size="12" fill="#666">Time</text>
+  <text x="150" y="470" font-family="Arial" font-size="12" fill="#666">IP Address</text>
+  <text x="300" y="470" font-family="Arial" font-size="12" fill="#666">Country</text>
+  <text x="450" y="470" font-family="Arial" font-size="12" fill="#666">Rule Triggered</text>
+  <text x="600" y="470" font-family="Arial" font-size="12" fill="#666">Request URI</text>
 </svg> 
