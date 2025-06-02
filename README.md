@@ -17,7 +17,7 @@ A comprehensive Security Operations Center (SOC) dashboard that provides real-ti
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](https://raw.githubusercontent.com/mlnas/SOC-Dashboard-Project/main/docs/images/architecture.png)
+![Architecture Overview](docs/images/architecture.png?v=2)
 
 The project follows a serverless architecture leveraging AWS services:
 
@@ -28,10 +28,10 @@ The project follows a serverless architecture leveraging AWS services:
 
 ## 📊 Dashboard Examples
 
-![Security Overview](https://raw.githubusercontent.com/mlnas/SOC-Dashboard-Project/main/docs/images/security-overview.png)
+![Security Overview](docs/images/security-overview.png?v=2)
 *Security Overview Dashboard showing key metrics and alerts*
 
-![Traffic Analysis](https://raw.githubusercontent.com/mlnas/SOC-Dashboard-Project/main/docs/images/traffic-analysis.png)
+![Traffic Analysis](docs/images/traffic-analysis.png?v=2)
 *Network Traffic Analysis Dashboard with detailed flow logs visualization*
 
 ### Prerequisites
